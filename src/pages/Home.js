@@ -27,7 +27,7 @@ class Home extends Component {
   render() {
     console.log("home render");
     return (
-      <div>
+      <div className="Page">
         <Display data={this.state.quotesData} />
       </div>
     );

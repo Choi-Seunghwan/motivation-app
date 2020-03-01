@@ -1,4 +1,5 @@
 import React from "react";
+import "./layout.scss";
 
 class Layout extends React.Component {
   render() {
