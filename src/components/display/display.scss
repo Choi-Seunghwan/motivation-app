@@ -5,4 +5,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .Pannel {
+    padding: 10%;
+  }
+
+  .Content {
+    font-size: 16px;
+  }
+
+  .Author {
+    font-weight: bold;
+    font-size: 14px;
+  }
 }

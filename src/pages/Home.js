@@ -29,7 +29,7 @@ class Home extends Component {
     if (this.state.loading) {
       return (
         <div className="Page">
-          <p>Loading...</p>
+          <p className="fixed-center">Loading...</p>
         </div>
       );
     } else {

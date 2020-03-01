@@ -9,8 +9,10 @@ class Display extends Component {
     };
     return (
       <div className="Display">
-        <p>{content}</p>
-        <p>{author}</p>
+        <div className="Pannel">
+          <p className="Content">{content}</p>
+          <p className="Author">{author}</p>
+        </div>
       </div>
     );
   }
