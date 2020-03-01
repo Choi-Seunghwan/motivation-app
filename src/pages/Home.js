@@ -17,6 +17,10 @@ class Home extends Component {
 
   async callRandomQuote() {
     const data = await getRandomQuote();
+    this.setState({
+      quotesData: data,
+      loading: false
+    });
     console.log("data", data);
   }
 
@@ -24,8 +28,7 @@ class Home extends Component {
     console.log("home render");
     return (
       <div>
-        <Display data="haha" />
-        <p>{this.state.quotesData}</p>
+        <Display data={this.state.quotesData} />
       </div>
     );
   }

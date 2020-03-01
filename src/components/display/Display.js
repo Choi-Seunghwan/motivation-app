@@ -3,7 +3,16 @@ import "./display.scss";
 
 class Display extends Component {
   render() {
-    return <span>{this.props.data}</span>;
+    const { author, content } = this.props.data || {
+      author: "author",
+      content: "content"
+    };
+    return (
+      <div className="Display">
+        <p>{content}</p>
+        <p>{author}</p>
+      </div>
+    );
   }
 }
 
