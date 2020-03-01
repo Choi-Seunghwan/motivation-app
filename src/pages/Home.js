@@ -26,11 +26,19 @@ class Home extends Component {
 
   render() {
     console.log("home render");
-    return (
-      <div className="Page">
-        <Display data={this.state.quotesData} />
-      </div>
-    );
+    if (this.state.loading) {
+      return (
+        <div className="Page">
+          <p>Loading...</p>
+        </div>
+      );
+    } else {
+      return (
+        <div className="Page">
+          <Display data={this.state.quotesData} />
+        </div>
+      );
+    }
   }
 }
 
