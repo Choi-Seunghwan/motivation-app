@@ -1,10 +1,13 @@
 import React from "react";
+import Layout from "components/common/Layout.js";
 import Home from "pages/Home.js";
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Layout>
+        <Home />
+      </Layout>
     </div>
   );
 }
