@@ -11,7 +11,7 @@ class Display extends Component {
       <div className="Display">
         <div className="Pannel">
           <p className="Content">{content}</p>
-          <p className="Author">{author}</p>
+          <p className="Author">- {author}</p>
         </div>
       </div>
     );

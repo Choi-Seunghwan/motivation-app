@@ -28,13 +28,13 @@ class Home extends Component {
     console.log("home render");
     if (this.state.loading) {
       return (
-        <div className="Page">
+        <div className="Page Home">
           <p className="fixed-center">Loading...</p>
         </div>
       );
     } else {
       return (
-        <div className="Page">
+        <div className="Page Home">
           <Display data={this.state.quotesData} />
         </div>
       );
